@@ -38,7 +38,7 @@ float vh = 15F;
         System.out.println("O salario base é: "+sb+" e o salario liquido é: "+sl );
 
 
-/*
+
 Escreva um programa que realize a conversão de graus Celsius (C)  para graus Fahrenheit (F). Utilize a fórmula abaixo:
 
 F = ( 9 C) 5 
@@ -47,30 +47,49 @@ F = ( 9 C) 5
 
 C = (( F - 32)  5)9 
 
-*/
-public class ExerciciosDevDojo{
-	static public void main(String[]args){
-float vh = 10F;
-        float celsius = 40;
+		float vh = 10F;
+        float celsius = 80;
 		float fahrenheit = (float)((1.8 * celsius)*5);
 		System.out.println("O valor de Celsius para Fahrenheit "+fahrenheit);
 		float celsiu = (float)((fahrenheit)/9);
         System.out.println("O valor de Fahrenheit para Celsius "+celsiu);
-	}
-} 
 
-/*
 Escreva uma rotina capaz de calcular e apresentar o valor do volume de uma lata de óleo, utilize a fórmula abaixo. 
 
 V = R2A
 
 Onde:
 	V = Volume
-	= 3.141592654
+	pi= 3.141592654
 	R = Raio da circunferência da lata
 	A = Altura da lata
 	OBS: O volume deve ser apresentado com a unidade de medida correto cm3.
+*/
 
+import java.util.Scanner;
+public class ExerciciosDevDojo{
+	static public void main(String[]args){
+		
+		Scanner entrada = new Scanner(System.in); 
+
+		double v = 0 ;
+		float pi = 3.141592654F ;
+		
+		System.out.println("me informe o valor do raio e da altura respctivamente");
+		float r = entrada.nextFloat();
+		float alturaDalata = entrada.nextFloat(); 
+
+		entrada.close();
+
+		v = ((Math.pow(r,2)) * (alturaDalata) * (pi)); 
+
+		System.out.println("O volume da lata de óleo é"+ v +"cm^3");
+
+	}		
+
+}
+
+/* 
 Efetuar o cálculo de quantos litros de combustível um automóvel consome em uma viagem. Sabendo que o automóvel tem uma autonomia de 12 Km por litro de combustível, desenvolva o cálculo utilizando a fórmula abaixo:
 
 	D=TV
@@ -80,7 +99,9 @@ Efetuar o cálculo de quantos litros de combustível um automóvel consome em um
 		D = Distância em Km
 		T = Tempo gasto na viagem
 		V = Velocidade
- 
+
+
+/* 
 Ler valores para as variáveis x e y, trocar os valores das variáveis e apresentar o resultado dos valores invertidos.
 
 Calcular e apresentar o valor de uma prestação em atraso, utilize a fórmula abaixo:

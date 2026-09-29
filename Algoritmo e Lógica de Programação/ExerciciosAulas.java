@@ -23,6 +23,8 @@ public class ExerciciosAulas{
 		int primeiroNumero = entrada.nextInt();
 		int segundoNumero = entrada.nextInt();
 		int terceiroNumero = entrada.nextInt();
+
+		entrada.close();
 		
 		if( primeiroNumero > segundoNumero ){
 			primeiroMaior = true;
