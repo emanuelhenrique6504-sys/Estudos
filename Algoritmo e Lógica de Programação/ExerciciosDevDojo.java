@@ -64,11 +64,8 @@ Onde:
 	R = Raio da circunferência da lata
 	A = Altura da lata
 	OBS: O volume deve ser apresentado com a unidade de medida correto cm3.
-*/
 
-import java.util.Scanner;
-public class ExerciciosDevDojo{
-	static public void main(String[]args){
+
 		
 		Scanner entrada = new Scanner(System.in); 
 
@@ -89,19 +86,48 @@ public class ExerciciosDevDojo{
 
 }
 
-/* 
 Efetuar o cálculo de quantos litros de combustível um automóvel consome em uma viagem. Sabendo que o automóvel tem uma autonomia de 12 Km por litro de combustível, desenvolva o cálculo utilizando a fórmula abaixo:
 
 	D=TV
-	LU=D  12
+	LU=D/12
 
 	Onde: 
 		D = Distância em Km
 		T = Tempo gasto na viagem
 		V = Velocidade
 
+*/
 
-/* 
+
+import java.util.Scanner;
+public class ExerciciosDevDojo{
+	static public void main(String[]args){
+		
+		Scanner entrada = new Scanner(System.in); 
+
+		double lu = 0 ;
+		double d = 0 ;
+
+		System.out.println("me informe a velocidade(em km/h) e o tempo(em horas) gasto");
+		float v = entrada.nextFloat();
+		float t = entrada.nextFloat(); 
+
+		entrada.close();
+		
+		d = (v * t) ;
+
+		lu = (d/12); 
+
+		System.out.println("a quantidade de gasolina gasta e de "+ lu +"L");
+
+	}		
+
+}
+
+
+
+
+/*
 Ler valores para as variáveis x e y, trocar os valores das variáveis e apresentar o resultado dos valores invertidos.
 
 Calcular e apresentar o valor de uma prestação em atraso, utilize a fórmula abaixo:
