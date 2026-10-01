@@ -95,13 +95,6 @@ Efetuar o cálculo de quantos litros de combustível um automóvel consome em um
 		D = Distância em Km
 		T = Tempo gasto na viagem
 		V = Velocidade
-
-*/
-
-
-import java.util.Scanner;
-public class ExerciciosDevDojo{
-	static public void main(String[]args){
 		
 		Scanner entrada = new Scanner(System.in); 
 
@@ -124,12 +117,35 @@ public class ExerciciosDevDojo{
 
 }
 
-
-
-
-/*
 Ler valores para as variáveis x e y, trocar os valores das variáveis e apresentar o resultado dos valores invertidos.
 
+*/
+import java.util.Scanner;
+public class ExerciciosDevDojo{
+	static public void main(String[]args){
+		Scanner entrada = new Scanner(System.in);
+
+		int cofre1 = 0 ;
+		int cofre2 = 0 ;
+		
+		System.out.println("Me informe valor de x e y");
+
+		int x = entrada.nextInt();
+		int y = entrada.nextInt();
+
+		entrada.close();
+		
+		cofre1 = x ;
+		cofre2 = y ;
+		x = cofre2 ;
+		y = cofre1 ;  
+
+		System.out.println("Os números de fporma invertida é: x = " + x + "  y = " + y);
+	}
+
+}
+
+/* 
 Calcular e apresentar o valor de uma prestação em atraso, utilize a fórmula abaixo:
 
 P=VALOR + (VALOR (TAXA100)TEMPO)
@@ -146,6 +162,7 @@ Onde:
 	L = Largura 
 	A = Altura
 
+/* 
 Fazer a leitura de um valor numérico inteiro e apresentar o valor do número elevado ao quadrado, ao cubo e a 10, apresentar também a soma total dos três resultados anteriores.
 
 Elaborar um programa que realize a conversão de US$ para R$, o programa deve saber qual o valor da cotação do dólar e fazer a conversão.
